@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!--Slider or carousel -->
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://cdn12.picryl.com/photo/2016/12/31/fence-dog-yellow-lab-animals-f10aec-1024.jpg" alt="First slide" height="300">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2019/07/04/06/29/animals-4315944_960_720.jpg" alt="Second slide" height="300">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/11/10/17/10/squirrel-2936889_960_720.jpg" alt="Third slide" height="300">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+  <div class="dropdown-divider"></div>
+
+<div class="row_colums">
+<div class="row">
+  <h1>Deal of the day</h1>
+  <button type="button" class="btn btn-primary">See all</button>
+</div>
+  <div class="dropdown-divider"></div>
+  <div class="row">
+    {% for product in products %}
+      <div class="column1">
+        <div class="card" style="width: 18rem;">
+            <img src="{{product.image_url}}" class="card-img-top" alt="{{product.name}}" width="300" height="300">
+            <div class="card-body">
+                <h5 class="card-title">{{product.name}}</h5>
+                <p class="card-text">{{product.price}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+  <div class="column2">
+    <h1>This</h1>
+  </div>
+</div>
+</div>
+
+
+
+{% endblock %}

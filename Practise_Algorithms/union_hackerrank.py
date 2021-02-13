@@ -1,0 +1,6 @@
+a = input().split()
+b = input().split()
+set1 = set(a)
+set2 = set(b)
+set3 = set1.intersection(set2)
+print(set3)

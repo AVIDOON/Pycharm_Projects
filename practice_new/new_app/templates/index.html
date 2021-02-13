@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+</head>
+<body>
+<h1> VIT UNIVERSITY </h1>
+</hr>
+<marquee behavior='scroll' direction='left'><h4><a href="www.google.com">Last date of filling form is 18/10/2019.</a><a
+        href="www.youtube.com">Go to registration desk for
+    further information.</a></h4></marquee>
+<img src="https://images.static-collegedunia.com/public/college_data/images/appImage/1510832154ccccccccccccccccccccccccccccccccccccc.png"
+     width='1425' height='560'>
+
+<div class = 'form1'>
+    <form>
+        First Name :
+        <input type='text' id='f_name' name='firstname' placeholder='For ex: Avinash'></br>
+        Second Name :
+        <input type='text' id='l_name' name='secondname' placeholder='For ex: Raj'></br>
+        Email Id :
+        <input type='text' id='email_id' name='emailed' placeholder='For ex: avinashraj@gmail.com'></br>
+        Branch :
+        <select>
+            <option value='cse'>CSE</option>
+            <option value='ai'>AI</option>
+            <option value='cyber'>Cyber</option>
+            <option value='aerospace'>Aerospace
+            </option>
+            <input type='submit' Value='Submit'>
+        </select>
+    </form>
+</div>
+<hr>
+    <div class="flower">
+        <h1>Jasmine</h1>
+        <p>Marguirite Daisy Flower</p>
+        <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_960_720.jpg" alt="Jasmine"
+             width="280" height="280">
+        <h4>Price : $50 </h4>
+        <input type="button" value="Buy Now">
+    </div>
+    <div class="flower">
+        <h1>Dahlia</h1>
+        <p>Red Dahlia Flower</p>
+        <img src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?cs=srgb&dl=bloom-blossom-dahlia-60597.jpg&fm=jpg" alt="Dahlia"
+             width="280" height="280">
+        <h4>Price : $70 </h4>
+        <input type="button" value="Buy Now">
+    </div>
+    <div class="flower">
+        <h1>Nucifera</h1>
+        <p>Red Nelumbo Nucifera</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Nelumno_nucifera_open_flower_-_botanic_garden_adelaide2.jpg" alt="Dahlia"
+             width="280" height="280">
+        <h4>Price : $100 </h4>
+        <input type="button" value="Buy Now">
+    </div>
+</body>
+</html>
+
+{% endblock %}
